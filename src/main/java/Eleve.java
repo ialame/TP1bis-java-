@@ -46,7 +46,7 @@ public class Eleve extends Personne  implements Comparable<Eleve> {
     }
     @Override
     public String toString() {
-        return nom +" "+prenom+ " (" + (int)(100 * moyenne)/100.0 + ")";
+        return super.toString() + ":   Moyenne: " + (int)(100 * moyenne)/100.0 + "\n";
     }
     public void setNotes() {
         String input = JOptionPane.showInputDialog("Saisir les notes de " + nom + "\nséparer par des virgules");

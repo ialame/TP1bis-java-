@@ -37,9 +37,9 @@ public class Classe {
         this.listeEleves.add(e);
     }
     public String toString(){
-        String s ="\n--------------------\n" + nom+" :\n--------------------\n";
+        String s ="\n----------------------------------------\n" + nom+" :\n----------------------------------------\n";
         for(Eleve e : listeEleves)
-                s+= e +" :\n";
+                s+= e +" \n";
 
         return s;
     }

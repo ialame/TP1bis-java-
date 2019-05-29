@@ -1,7 +1,7 @@
 abstract class Personne {
     protected String nom;
     protected String prenom;
-    protected String ville;
+    protected String adresse;
     Personne(){ }
     Personne(String nom,String prenom){
         this.nom=nom;
@@ -24,15 +24,15 @@ abstract class Personne {
         this.prenom = prenom;
     }
 
-    public String getVille() {
-        return ville;
+    public String getAdresse() {
+        return adresse;
     }
 
-    public void setVille(String ville) {
-        this.ville = ville;
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
     }
 
     public String toString(){
-        return nom+" "+prenom;
+        return nom+" "+prenom + (adresse==null?"":"("+adresse+")");
     }
 }
